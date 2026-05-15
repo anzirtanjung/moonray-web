@@ -105,3 +105,13 @@ if (document.readyState === "complete" || document.readyState === "interactive")
 } else {
     document.addEventListener("DOMContentLoaded", checkSession);
 }
+// Memaksa elemen generator muncul jika stuck di loading
+setTimeout(() => {
+    const loadingScreen = document.querySelector('.loading-screen') || document.querySelector('#loading');
+    const mainContent = document.querySelector('.main-app') || document.querySelector('#app');
+    
+    if (loadingScreen) loadingScreen.style.display = 'none';
+    if (mainContent) mainContent.style.visibility = 'visible';
+    
+    console.log("Bypass: Memaksa tampilan utama muncul...");
+}, 3000); // Tunggu 3 detik
