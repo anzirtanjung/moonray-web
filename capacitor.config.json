@@ -1,0 +1,16 @@
+{
+	"appId": "com.motionlabs.ai",
+	"appName": "Moonray",
+	"webDir": "www",
+	"server": {
+		"androidScheme": "https"
+	},
+	"android": {
+		"allowMixedContent": true
+	},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": false
+		}
+	}
+}
